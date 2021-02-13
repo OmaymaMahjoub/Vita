@@ -2,10 +2,14 @@ import datetime
 import time
 
 class Journal:
-    def __init__(self,date,j={}):
+    def __init__(self,id,date,j={}):
+        self.id=id
         self.date=date
         self.journal=j
 
+    def getId(self):
+        return self.id
+    
     def getJournal(self):
         return self.journal
 
